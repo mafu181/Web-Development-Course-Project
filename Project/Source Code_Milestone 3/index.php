@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>
+          CARIT
+       </title>
+   </head>
+   
+   <style>
+      p {
+        color: red;
+        text-align: center;
+      } 
+      </style>
+   
+
+   <body>
+
+       <?php
+           include("menu.html");
+       ?>
+
+      <style>
+         p,h2,h1,h3{
+           color:blue;text-align: center;
+         } 
+         img{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+         }
+         </style>       
+      <h1 style="background-color:DodgerBlue;text-align:center">Center for Applied Research in Information Technology</h1>
+      
+
+      <h2 style="background-color:yellow;text-align:center;">About</h2> 
+   
+         
+      <p>Welcome to the Center for Applied Research in Information Technology (CARIT) website.<br>
+         The CARIT is a Research Center that provides high quality survey research, program evaluation,<br>
+         performance measurement, and experimental research using scientifically rigorous social science methods.<br>
+         to better interact with local businesses and communities. The CARIT is a valuable resource for faculty in<br>
+         need of assistance for research projects, grants, and contracts. In addition, community organizations and<br>
+         agencies can utilize the CARIT in a variety of areas such as program evaluation or community surveys.</p>
+      <p>The CARIT will provide an environment that focuses on facilitating an applied learning environment <br>
+         for KSU graduate and undergraduate students with hands-on research experience in the areas of data <br>
+         collection, data management and analysis. We hope that you will peruse the website to see what CARIT<br>
+         projects have been conducted or are in the works. You can also find information about the services<br>
+         available through CARIT.</p>
+      
+      <img src="images/ksu_logo.png" alt="KSU logo"> 
+      <p><a href="http://www.kennesaw.edu/">Kennesaw State University</a></p>
+      
+      <h3 style="color:Purple;text-align: center">Latest News</h3> 
+
+      <ul>
+         <li style="color:green">Kennesaw State Receives Grant To Increase STEM, Computing Access And Readiness</li>
+      </ul>
+      <p>Computing and Software Engineering has received a $36,000 grant to launch a program promoting computing and Science,<br>
+         Technology, Engineering and Math (STEM) fields to middle school students.</p>
+         
+      <ul>
+         <li style="color:green">Cyber Security & Information Technology</li>
+      </ul>   
+      <p>Applied Research Center (CARIT) performs applied and advanced research in<br>
+         the areas of Enterprise Systems, Cyber Security and Data Science. The solutions<br>
+         are tailored to deliver critical information to federal, state, local governments<br>
+         and the private sector clients, keeping them well informed, connected and secure.<br>
+         We share the commitment and responsibility to securing information and information<br>
+         networks with integration of people, operations, and technology.</p> 
+      <ul>
+         <li style="color:green" >Data Science</li>
+      </ul>  
+      <p>CARIT performs extensive research in the area of Data Science to provide analytical<br>
+         solutions in the area of nuclear and cybersecurity to federal / state governments and<br>
+         national labs. Current research is focused on Machine Learning, Data Analytics and Visualization</p>
+
+      <ul>
+         <li style="color:green" >Kennesaw State Student Awarded Exclusive Merwin Scholarship</li>
+      </ul>  
+      <p>Kennesaw State University student is in rare company after being named one of 17<br>
+         students worldwide to receive the Richard E. Merwin Scholarship presented by the Institute<br>
+         of Electrical and Electronics Engineers Computer Society</p> 
+
+
+      <h2 style="text-align:center;color:green">University Contact</h2>
+                    <p style="text-align:center;font-style: italic;">
+                        Kennesaw Campus
+                        1000 Chastain Road
+                        Kennesaw, GA 30144
+                        Phone: 470-578-6000</p>
+
+                        
+                     <p style="text-align:center;font-style:italic">   
+                        Marietta Campus
+                        100 South Marietta Pkwy
+                        Marietta, GA 30060
+                        Phone: 470-578-6000</p>
+                    
+         
+      
+   </body>
+
+      
+</html>
+
+     

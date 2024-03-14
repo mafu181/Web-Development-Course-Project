@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML form</title>
+    <script>
+        function validate() {
+           
+
+            let name = document.forms["profile"]["name"].value;
+            if (name == "" || name == null) {
+                document.getElementById("errSec").innerHTML = "Name is required.";
+                return false;
+
+            }
+
+            let email = document.forms["profile"]["email"].value;
+            if (email == "" || email == null) {
+               document.getElementById("errSec").innerHTML = "Email Address is required.";
+               return false;
+            }
+
+            
+            let education = document.forms["profile"]["education"].value;
+            if (education == "" || education == null) {
+                document.getElementById("errSec").innerHTML = "Please select your Education level.";
+                return false;
+            }
+
+        
+           let choice1 = document.getElementById("html").checked;
+           let choice2 = document.getElementById("css").checked;
+           let choice3 = document.getElementById("javascript").checked;
+           let choice4 = document.getElementById("php").checked;
+           let choice5 = document.getElementById("python").checked;
+
+           if ((choice1 == "" ) && ( choice2 == "" ) && ( choice3 == "" ) && ( choice4 == "") && ( choice5 == "")) {
+                document.getElementById("errSec").innerHTML = "Please provide your skills";
+                return false;
+           }
+
+           let location = document.forms["profile"]["location"].value;
+           if (location == "" || location == null) {
+                document.getElementById("errSec").innerHTML = "Please select your location.";
+                return false;
+            }
+
+           let major = document.forms["profile"]["major"].value;
+           if (major == "" || major == null) {
+                document.getElementById("errSec").innerHTML = "Please indicate your major.";
+                return false;
+            }
+           
+
+        }
+
+        
+
+
+       </script>
+</head>
+
+<body>
+
+
+    <h1>Student Profile</h1>
+    <form name="profile" method="POST" action="Application.php" onsubmit="return validate()">
+
+        Name: <input type="text" id="name" name="name" value=""><br><br>
+        Email: <input type="text" id="email" name="email" value=""><br><br>
+
+        Education Level:<br>
+        <input type="radio" id="radio1" name="education" value="undergraduate">Undergraduate<br>
+        <input type="radio" id="radio2" name="education" value="graduate">Graduate<br><br>
+
+        Skills:<br>
+        <input type="checkbox" name="skills" id="html">HTML<br>
+        <input type="checkbox" name="skills" id="css">CSS<br>
+        <input type="checkbox" name="skills" id="javascript">JavaScript<br>
+        <input type="checkbox" name="skills" id="php">PHP<br>
+        <input type="checkbox" name="skills" id="python">Python<br><br>
+
+        Home Location:<br>
+        <select name="location" >
+            <option value="" select>Please select</option>
+            <option value="ATL">Atlanta</option>
+            <option value="CM">Cumming</option>
+            <option value="MRT">Marietta</option>
+            <option value="KNS">Kennesaw</option>
+            <option value="ALP">Alpharetta</option>
+
+        </select><br><br>
+        Major:<br>
+        <select name="major" size="3">
+            <option value="cs">Computer Science</option>
+            <option value="it">Information Technology</option>
+            <option value="SWE">Software Engineer</option>
+            <option value="IS">Information System</option>
+        </select><br>
+        <button type="submit">Submit</button>
+
+
+    </form>
+
+    <div id="errSec"></div>
+</body>
+
+</html>
